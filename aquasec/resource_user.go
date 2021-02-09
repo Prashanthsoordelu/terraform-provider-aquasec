@@ -1,6 +1,7 @@
 package aquasec
 
 import (
+	"fmt"
 	"log"
 	"time"
 
@@ -79,7 +80,7 @@ func resourceUserCreate(d *schema.ResourceData, m interface{}) error {
 	}
 
 	d.SetId(d.Get("user_id").(string))
-
+	fmt.Println("USER CREATED")
 	err = resourceUserRead(d, m)
 
 	return err
