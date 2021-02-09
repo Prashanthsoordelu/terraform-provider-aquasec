@@ -9,10 +9,10 @@ import (
 )
 
 func TestAquasecUserManagement(t *testing.T) {
-	userID := "terraform ACC TEST USER"
+	userID := "terraform-acctest"
 	password := "password"
-	name := "terraform"
-	email := "terraform@test.com"
+	name := "terraform acc testuser"
+	email := "terraform@acctest.com"
 	role := "administrator"
 	resource.Test(t, resource.TestCase{
 		PreCheck:  func() { testAccPreCheck(t) },
