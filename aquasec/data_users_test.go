@@ -14,7 +14,7 @@ func TestAquasecUserManagementDatasource(t *testing.T) {
 		Steps: []resource.TestStep{
 			{
 				Config: `data "aquasec_users" "testusers" {}`,
-				Check:  testAccCheckAquasecUsersDataSurceExists("testusers"),
+				Check:  testAccCheckAquasecUsersDataSurceExists("data.aquasec_users.testusers"),
 			},
 		},
 	})
